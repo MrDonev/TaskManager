@@ -1,25 +1,15 @@
-import logo from './logo.svg';
+
+import Tasks from './Tasks'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+  return <>
+  <h1>Task manager</h1>  
+  <h4>Add or remove tasks:   (tasks not stored in a DB, just for this session)</h4>
+  <Tasks/>
+  </>
 }
+
 
 export default App;
